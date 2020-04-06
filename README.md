@@ -33,9 +33,11 @@ It is important to use this command again to make sure that there is a container
 
 Will prepare the container to be deployed on heroku
 
-### `heroku create`
+### `heroku create` or `heroku create -a <app name>`
 
-create a new app on heroku it is important to pay attention to the name of the app that heroko will create because we will need depe for the next step example:
+create a new app on heroku it is important to pay attention to the name of the app that heroko will create because we will need for the next step.
+
+with the -a tag you specify which app name you want without it heroku creates a random name 
 
 ![Alt text](src/captura.png?raw=true "Optional Title")
 
