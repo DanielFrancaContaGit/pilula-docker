@@ -12,7 +12,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/DanielFrancaContaGit/pilula-docker.git"
           target="_blank"
           rel="noopener noreferrer"
         >
