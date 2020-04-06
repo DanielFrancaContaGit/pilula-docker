@@ -1,68 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Wat you ned to run the project:
 
-## Available Scripts
+You nead to have [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) and [heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) to run and deploy the project:
 
-In the project directory, you can run:
+ - [doker install gide](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+ - [Heroku CLI install gide](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
 
-### `yarn start`
+## After making the installations use these commands to run the project:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `sudo docker -t pilula/doker:1.0 .`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Create a dockerr image locally
 
-### `yarn test`
+### `sudo docker -p 3000:3000 -p pilula/docker:1.0`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Create a docker container from the image previously created
 
-### `yarn build`
+### `sudo docker ps`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+shows the containers that are running
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Container deployment on heroku
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `heroku login`
 
-### `yarn eject`
+log in to your heroku account
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `sudo docker ps`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+It is important to use this command again to make sure that there is a container running
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `sudo heroku conatiner:login`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Will prepare the container to be deployed on heroku
 
-## Learn More
+### `heroku create`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+create a new app on heroku it is important to pay attention to the name of the app that heroko will create because we will need depe for the next step example:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Alt text](/../maste/src/captura.png?raw=true "Optional Title")
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### `sudo heroku container:push web -a <app name>`
 
-### Analyzing the Bundle Size
+this command pushes the container that is on your machine to the heroku app
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### `sudo heroku container:release web -a <app name>`
 
-### Making a Progressive Web App
+this command releases the container for the heroku app
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### `heroku open`
 
-### Advanced Configuration
+will direct to the site already deployed
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
