@@ -37,7 +37,9 @@ Will prepare the container to be deployed on heroku
 
 create a new app on heroku it is important to pay attention to the name of the app that heroko will create because we will need depe for the next step example:
 
-![Alt text](/../maste/src/captura.png?raw=true "Optional Title")
+![Alt text](src/captura.png?raw=true "Optional Title")
+
+In the Image case the app name is blooming-hollows-42380
 
 
 ### `sudo heroku container:push web -a <app name>`
