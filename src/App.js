@@ -1,14 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+import gif from './boy-do-computador.gif';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={gif}/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        Congratulations you got it!
         </p>
         <a
           className="App-link"
@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          GitHub
         </a>
       </header>
     </div>
