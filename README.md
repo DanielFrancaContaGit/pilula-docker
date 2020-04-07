@@ -7,11 +7,11 @@ You nead to have [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu
 
 ## After making the installations use these commands to run the project:
 
-### `sudo docker -t pilula/doker:1.0 .`
+### `sudo docker build -t pilula/doker:1.0 .`
 
 Create a dockerr image locally
 
-### `sudo docker -p 3000:3000 -p pilula/docker:1.0`
+### `sudo docker run -p 3000:3000 -p pilula/docker:1.0`
 
 Create a docker container from the image previously created
 
