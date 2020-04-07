@@ -29,7 +29,7 @@ log in to your heroku account
 
 It is important to use this command again to make sure that there is a container running
 
-### `sudo heroku conatiner:login`
+### `sudo heroku container:login`
 
 Will prepare the container to be deployed on heroku
 
