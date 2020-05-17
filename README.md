@@ -1,3 +1,5 @@
+Language: [English](README.md) | [Português](translation/pt-BR/README.md) 
+
 ## Wat you ned to run the project:
 
 You nead to have [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) and [heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) to run and deploy the project:
